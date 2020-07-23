@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_RSGithubRepoListing_RSGithubRepoListingTests : NSObject
+@end
+@implementation PodsDummy_Pods_RSGithubRepoListing_RSGithubRepoListingTests
+@end

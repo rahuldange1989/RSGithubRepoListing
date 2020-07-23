@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027506B159B43BF706808CF6 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4496A75B63EDA77A78C700 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a */; };
+		5C648D7D211A6269534477DA /* libPods-RSGithubRepoListing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF15626012BED3F7BA8F7B5 /* libPods-RSGithubRepoListing.a */; };
 		5FC8F46D24C9991300B15BF6 /* RSGithubRepoListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC8F46324C9991300B15BF6 /* RSGithubRepoListing.framework */; };
 		5FC8F47224C9991300B15BF6 /* RSGithubRepoListingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8F47124C9991300B15BF6 /* RSGithubRepoListingTests.m */; };
 		5FC8F47424C9991300B15BF6 /* RSGithubRepoListing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8F46624C9991300B15BF6 /* RSGithubRepoListing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FC8F4AB24CA2AF500B15BF6 /* RSGithubRepo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8F4A924CA2AF500B15BF6 /* RSGithubRepo.h */; };
+		5FC8F4AC24CA2AF500B15BF6 /* RSGithubRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8F4AA24CA2AF500B15BF6 /* RSGithubRepo.m */; };
+		5FC8F4B024CA2B0900B15BF6 /* GithubServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8F4AE24CA2B0900B15BF6 /* GithubServices.m */; };
+		5FC8F4B124CA2B0900B15BF6 /* GithubServices.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8F4AF24CA2B0900B15BF6 /* GithubServices.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4496A75B63EDA77A78C700 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSGithubRepoListing-RSGithubRepoListingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		355859CFD6CC45A422491861 /* Pods-RSGithubRepoListing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSGithubRepoListing.release.xcconfig"; path = "Target Support Files/Pods-RSGithubRepoListing/Pods-RSGithubRepoListing.release.xcconfig"; sourceTree = "<group>"; };
+		4A57A4B30BFE6016DAC788FE /* Pods-RSGithubRepoListing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSGithubRepoListing.debug.xcconfig"; path = "Target Support Files/Pods-RSGithubRepoListing/Pods-RSGithubRepoListing.debug.xcconfig"; sourceTree = "<group>"; };
 		5FC8F46324C9991300B15BF6 /* RSGithubRepoListing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSGithubRepoListing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8F46624C9991300B15BF6 /* RSGithubRepoListing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSGithubRepoListing.h; sourceTree = "<group>"; };
 		5FC8F46724C9991300B15BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC8F46C24C9991300B15BF6 /* RSGithubRepoListingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSGithubRepoListingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC8F47124C9991300B15BF6 /* RSGithubRepoListingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSGithubRepoListingTests.m; sourceTree = "<group>"; };
 		5FC8F47324C9991300B15BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC8F4A924CA2AF500B15BF6 /* RSGithubRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSGithubRepo.h; sourceTree = "<group>"; };
+		5FC8F4AA24CA2AF500B15BF6 /* RSGithubRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSGithubRepo.m; sourceTree = "<group>"; };
+		5FC8F4AE24CA2B0900B15BF6 /* GithubServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubServices.m; sourceTree = "<group>"; };
+		5FC8F4AF24CA2B0900B15BF6 /* GithubServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubServices.h; sourceTree = "<group>"; };
+		7FF15626012BED3F7BA8F7B5 /* libPods-RSGithubRepoListing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSGithubRepoListing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07476E616BA9F6C88D564AD /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSGithubRepoListing-RSGithubRepoListingTests.release.xcconfig"; path = "Target Support Files/Pods-RSGithubRepoListing-RSGithubRepoListingTests/Pods-RSGithubRepoListing-RSGithubRepoListingTests.release.xcconfig"; sourceTree = "<group>"; };
+		F32FBD168D61BFE90C7E0C0F /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSGithubRepoListing-RSGithubRepoListingTests.debug.xcconfig"; path = "Target Support Files/Pods-RSGithubRepoListing-RSGithubRepoListingTests/Pods-RSGithubRepoListing-RSGithubRepoListingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C648D7D211A6269534477DA /* libPods-RSGithubRepoListing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FC8F46D24C9991300B15BF6 /* RSGithubRepoListing.framework in Frameworks */,
+				027506B159B43BF706808CF6 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,8 @@
 				5FC8F46524C9991300B15BF6 /* RSGithubRepoListing */,
 				5FC8F47024C9991300B15BF6 /* RSGithubRepoListingTests */,
 				5FC8F46424C9991300B15BF6 /* Products */,
+				971034F05F2E078DF16EE562 /* Pods */,
+				F177A446C07F448204EACBA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +91,8 @@
 		5FC8F46524C9991300B15BF6 /* RSGithubRepoListing */ = {
 			isa = PBXGroup;
 			children = (
+				5FC8F4AD24CA2AFA00B15BF6 /* Services */,
+				5FC8F4A824CA2AB900B15BF6 /* Models */,
 				5FC8F46624C9991300B15BF6 /* RSGithubRepoListing.h */,
 				5FC8F46724C9991300B15BF6 /* Info.plist */,
 			);
@@ -86,6 +108,44 @@
 			path = RSGithubRepoListingTests;
 			sourceTree = "<group>";
 		};
+		5FC8F4A824CA2AB900B15BF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8F4A924CA2AF500B15BF6 /* RSGithubRepo.h */,
+				5FC8F4AA24CA2AF500B15BF6 /* RSGithubRepo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FC8F4AD24CA2AFA00B15BF6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5FC8F4AF24CA2B0900B15BF6 /* GithubServices.h */,
+				5FC8F4AE24CA2B0900B15BF6 /* GithubServices.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		971034F05F2E078DF16EE562 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A57A4B30BFE6016DAC788FE /* Pods-RSGithubRepoListing.debug.xcconfig */,
+				355859CFD6CC45A422491861 /* Pods-RSGithubRepoListing.release.xcconfig */,
+				F32FBD168D61BFE90C7E0C0F /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.debug.xcconfig */,
+				B07476E616BA9F6C88D564AD /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F177A446C07F448204EACBA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF15626012BED3F7BA8F7B5 /* libPods-RSGithubRepoListing.a */,
+				0A4496A75B63EDA77A78C700 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +153,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC8F4B124CA2B0900B15BF6 /* GithubServices.h in Headers */,
+				5FC8F4AB24CA2AF500B15BF6 /* RSGithubRepo.h in Headers */,
 				5FC8F47424C9991300B15BF6 /* RSGithubRepoListing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FC8F47724C9991300B15BF6 /* Build configuration list for PBXNativeTarget "RSGithubRepoListing" */;
 			buildPhases = (
+				719DE00E1DFE0CDB6D6B474D /* [CP] Check Pods Manifest.lock */,
 				5FC8F45E24C9991300B15BF6 /* Headers */,
 				5FC8F45F24C9991300B15BF6 /* Sources */,
 				5FC8F46024C9991300B15BF6 /* Frameworks */,
@@ -122,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FC8F47A24C9991300B15BF6 /* Build configuration list for PBXNativeTarget "RSGithubRepoListingTests" */;
 			buildPhases = (
+				F83D740540EFD3C99F336F5B /* [CP] Check Pods Manifest.lock */,
 				5FC8F46824C9991300B15BF6 /* Sources */,
 				5FC8F46924C9991300B15BF6 /* Frameworks */,
 				5FC8F46A24C9991300B15BF6 /* Resources */,
@@ -189,11 +253,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		719DE00E1DFE0CDB6D6B474D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSGithubRepoListing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83D740540EFD3C99F336F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSGithubRepoListing-RSGithubRepoListingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FC8F45F24C9991300B15BF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC8F4B024CA2B0900B15BF6 /* GithubServices.m in Sources */,
+				5FC8F4AC24CA2AF500B15BF6 /* RSGithubRepo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +447,7 @@
 		};
 		5FC8F47824C9991300B15BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A57A4B30BFE6016DAC788FE /* Pods-RSGithubRepoListing.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +471,7 @@
 		};
 		5FC8F47924C9991300B15BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355859CFD6CC45A422491861 /* Pods-RSGithubRepoListing.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -380,6 +495,7 @@
 		};
 		5FC8F47B24C9991300B15BF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32FBD168D61BFE90C7E0C0F /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
@@ -397,6 +513,7 @@
 		};
 		5FC8F47C24C9991300B15BF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07476E616BA9F6C88D564AD /* Pods-RSGithubRepoListing-RSGithubRepoListingTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53XT5T6645;
