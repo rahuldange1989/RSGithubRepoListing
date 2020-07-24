@@ -10,6 +10,7 @@
 		23744E6C21FA318159DF40F8 /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D11715B998EA6D9FD1E118CE /* libPods-RSGithubRepoListing-RSGithubRepoListingTests.a */; };
 		419B5CD4EEE53312783008B7 /* libPods-RSGithubRepoListing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9E2EB69EBD1A615BFB324F /* libPods-RSGithubRepoListing.a */; };
 		5F77D65824CA427900348F22 /* RSGithubRepoListingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8F47124C9991300B15BF6 /* RSGithubRepoListingTests.m */; };
+		5F926EC624CB07A000BD9F98 /* GithubServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8F4AE24CA2B0900B15BF6 /* GithubServices.m */; };
 		5FC8F46D24C9991300B15BF6 /* RSGithubRepoListing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC8F46324C9991300B15BF6 /* RSGithubRepoListing.framework */; };
 		5FC8F47424C9991300B15BF6 /* RSGithubRepoListing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8F46624C9991300B15BF6 /* RSGithubRepoListing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FC8F4AB24CA2AF500B15BF6 /* RSGithubRepo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC8F4A924CA2AF500B15BF6 /* RSGithubRepo.h */; };
@@ -314,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F926EC624CB07A000BD9F98 /* GithubServices.m in Sources */,
 				5F77D65824CA427900348F22 /* RSGithubRepoListingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

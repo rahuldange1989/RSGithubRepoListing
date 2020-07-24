@@ -1,6 +1,0 @@
-framework module RSGithubRepoListing {
-  umbrella header "RSGithubRepoListing-umbrella.h"
-
-  export *
-  module * { export * }
-}
