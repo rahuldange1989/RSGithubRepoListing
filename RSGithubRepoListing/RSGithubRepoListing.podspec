@@ -10,7 +10,6 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/rahuldange1989/RSGithubRepoListing.git", :tag => "0.0.2" }
   spec.source_files  = "RSGithubRepoListing/RSGithubRepoListing/**/*.{h,m}"
-  spec.public_header_files = "RSGithubRepoListing/RSGithubRepoListing/**/*.h"
   spec.requires_arc = true
   spec.dependency "AFNetworking", "4.0.0"
 
