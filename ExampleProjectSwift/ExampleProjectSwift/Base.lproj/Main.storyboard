@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w3C-VO-5cH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,25 +10,25 @@
         <!--Github Repo Listing-->
         <scene sceneID="FjH-QP-cir">
             <objects>
-                <viewController id="MQu-7J-Xwj" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="MQu-7J-Xwj" customClass="ViewController" customModule="ExampleProjectSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qw9-QD-SJo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter github username." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z6P-4X-JbB">
-                                <rect key="frame" x="57" y="148" width="300" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter github username." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2k-Gc-cFo">
+                                <rect key="frame" x="57" y="208" width="300" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XBR-zc-JTr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XHf-iW-KMY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKG-2Z-Txj">
-                                <rect key="frame" x="132" y="242" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uk-oK-2hA">
+                                <rect key="frame" x="132" y="292" width="150" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9CJ-zU-gQJ"/>
-                                    <constraint firstAttribute="height" constant="40" id="Jpx-Fp-cRm"/>
+                                    <constraint firstAttribute="height" constant="40" id="DFg-NB-kuJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="W2P-9q-qOJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Submit">
@@ -41,11 +41,11 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="submitBtnClicked:" destination="MQu-7J-Xwj" eventType="touchUpInside" id="cMo-TM-jUZ"/>
+                                    <action selector="submitBtnClicked:" destination="MQu-7J-Xwj" eventType="touchUpInside" id="TKd-h8-fD6"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-FL-wnW">
-                                <rect key="frame" x="57" y="342" width="38.5" height="18"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-xi-6VW">
+                                <rect key="frame" x="57" y="392" width="300" height="18"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,21 +53,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WCv-ke-3Ha" firstAttribute="trailing" secondItem="KVO-FL-wnW" secondAttribute="trailing" constant="318.5" id="67t-SN-J1g"/>
-                            <constraint firstItem="IKG-2Z-Txj" firstAttribute="top" secondItem="Z6P-4X-JbB" secondAttribute="bottom" constant="60" id="Cke-Rt-JlN"/>
-                            <constraint firstItem="KVO-FL-wnW" firstAttribute="top" secondItem="IKG-2Z-Txj" secondAttribute="bottom" constant="60" id="aZc-UL-sOA"/>
-                            <constraint firstItem="KVO-FL-wnW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Z6P-4X-JbB" secondAttribute="leading" id="gyx-p3-amZ"/>
-                            <constraint firstItem="Z6P-4X-JbB" firstAttribute="top" secondItem="WCv-ke-3Ha" secondAttribute="top" constant="60" id="sCA-lD-3cp"/>
-                            <constraint firstItem="Z6P-4X-JbB" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="t2n-f8-V7U"/>
-                            <constraint firstItem="IKG-2Z-Txj" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="ud4-ND-IcD"/>
+                            <constraint firstItem="m2k-Gc-cFo" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="6Cd-nB-ins"/>
+                            <constraint firstItem="7uk-oK-2hA" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="N1e-2d-Yme"/>
+                            <constraint firstItem="WCv-ke-3Ha" firstAttribute="trailing" secondItem="lKb-xi-6VW" secondAttribute="trailing" constant="57" id="Sba-GV-iqC"/>
+                            <constraint firstItem="lKb-xi-6VW" firstAttribute="top" secondItem="7uk-oK-2hA" secondAttribute="bottom" constant="60" id="Tmh-Vy-Ka0"/>
+                            <constraint firstItem="lKb-xi-6VW" firstAttribute="leading" secondItem="WCv-ke-3Ha" secondAttribute="leading" constant="57" id="kjj-yS-Gnn"/>
+                            <constraint firstItem="7uk-oK-2hA" firstAttribute="top" secondItem="m2k-Gc-cFo" secondAttribute="bottom" constant="50" id="qNK-ci-COW"/>
+                            <constraint firstItem="m2k-Gc-cFo" firstAttribute="top" secondItem="WCv-ke-3Ha" secondAttribute="top" constant="120" id="rbH-ch-8aL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WCv-ke-3Ha"/>
                     </view>
                     <navigationItem key="navigationItem" title="Github Repo Listing" id="BdK-Uq-nwC"/>
                     <connections>
-                        <outlet property="reposLabel" destination="KVO-FL-wnW" id="oqT-Es-thB"/>
-                        <outlet property="usernameField" destination="Z6P-4X-JbB" id="eCL-TO-RmS"/>
-                        <outlet property="usernameTextField" destination="Z6P-4X-JbB" id="sLa-Lu-aho"/>
+                        <outlet property="repoLabel" destination="lKb-xi-6VW" id="RCU-8b-lgZ"/>
+                        <outlet property="usernameTextField" destination="m2k-Gc-cFo" id="zP7-RE-0e0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ujb-mN-Pms" sceneMemberID="firstResponder"/>

@@ -29,20 +29,23 @@
 	GithubServices *services = [[GithubServices alloc] init];
 	[services getGithubReposForUsername:username completionBlocl:^(RSGithubRepos * allRepos) {
 
+		NSString *repoString = @"";
+		
 		if ([allRepos count] == 0)
 		{
-			self.reposLabel.text = @"No repos present.";
+			repoString = @"No repos present.";
 		}
 		else
 		{
-			NSString *repoString = @"";
 			for (RSGithubRepoElement *repo in allRepos) {
 				repoString = [repoString stringByAppendingFormat:@"- %@\n", [repo name]];
 			}
-			self.reposLabel.text = repoString;
 		}
 		
-		[self.reposLabel setHidden:false];
+		dispatch_async(dispatch_get_main_queue(), ^{
+			self.reposLabel.text = repoString;
+			[self.reposLabel setHidden:false];
+		});
 	}];
 	
 }

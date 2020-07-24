@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import RSGithubRepoListing
 
 class ViewController: UIViewController {
 
-	@IBOutlet weak var reposLabel: UILabel!
+	@IBOutlet weak var repoLabel: UILabel!
 	@IBOutlet weak var usernameTextField: UITextField!
 	
 	
@@ -22,6 +23,27 @@ class ViewController: UIViewController {
 	// MARK: - Event Handler Methods -
 	@IBAction func submitBtnClicked(_ sender: Any) {
 	
+		self.view.endEditing(true)
+		let username = (self.usernameTextField.text)!.replacingOccurrences(of: " ", with: "")
+	
+		let gitServices = GithubServices()
+		gitServices.getGithubRepos(forUsername: username) { [weak self] (allRepos) in
+			
+			var reposString = ""
+			
+			if allRepos.count == 0 {
+				reposString = "No repos present."
+			} else {
+				for repo in allRepos {
+					reposString = reposString + "-" + repo.name + "\n"
+				}
+			}
+			
+			DispatchQueue.main.async {
+				self?.repoLabel.text = reposString
+				self?.repoLabel.isHidden = false
+			}
+		}
 	}
 	
 }
