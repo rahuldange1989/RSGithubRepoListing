@@ -1,0 +1,6 @@
+framework module Pods_ExampleProjectObjectiveC {
+  umbrella header "Pods-ExampleProjectObjectiveC-umbrella.h"
+
+  export *
+  module * { export * }
+}

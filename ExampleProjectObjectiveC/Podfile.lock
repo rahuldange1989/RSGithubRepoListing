@@ -1,0 +1,34 @@
+PODS:
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
+    - AFNetworking/NSURLSession
+  - RSGithubRepoListing (0.0.2):
+    - AFNetworking (= 4.0.0)
+
+DEPENDENCIES:
+  - RSGithubRepoListing
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - RSGithubRepoListing
+
+SPEC CHECKSUMS:
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  RSGithubRepoListing: a38e252978e2c77e124cadbcf52e59ad7c6c8e12
+
+PODFILE CHECKSUM: af54b354e15e45d215f357b4e3cc1e6736c6d271
+
+COCOAPODS: 1.8.4
