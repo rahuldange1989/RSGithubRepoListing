@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Github Repo Listing-->
+        <scene sceneID="FjH-QP-cir">
+            <objects>
+                <viewController id="MQu-7J-Xwj" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qw9-QD-SJo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter github username." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z6P-4X-JbB">
+                                <rect key="frame" x="57" y="148" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="XBR-zc-JTr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKG-2Z-Txj">
+                                <rect key="frame" x="132" y="242" width="150" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9CJ-zU-gQJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="Jpx-Fp-cRm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitBtnClicked:" destination="MQu-7J-Xwj" eventType="touchUpInside" id="cMo-TM-jUZ"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVO-FL-wnW">
+                                <rect key="frame" x="57" y="342" width="38.5" height="18"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WCv-ke-3Ha" firstAttribute="trailing" secondItem="KVO-FL-wnW" secondAttribute="trailing" constant="318.5" id="67t-SN-J1g"/>
+                            <constraint firstItem="IKG-2Z-Txj" firstAttribute="top" secondItem="Z6P-4X-JbB" secondAttribute="bottom" constant="60" id="Cke-Rt-JlN"/>
+                            <constraint firstItem="KVO-FL-wnW" firstAttribute="top" secondItem="IKG-2Z-Txj" secondAttribute="bottom" constant="60" id="aZc-UL-sOA"/>
+                            <constraint firstItem="KVO-FL-wnW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Z6P-4X-JbB" secondAttribute="leading" id="gyx-p3-amZ"/>
+                            <constraint firstItem="Z6P-4X-JbB" firstAttribute="top" secondItem="WCv-ke-3Ha" secondAttribute="top" constant="60" id="sCA-lD-3cp"/>
+                            <constraint firstItem="Z6P-4X-JbB" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="t2n-f8-V7U"/>
+                            <constraint firstItem="IKG-2Z-Txj" firstAttribute="centerX" secondItem="Qw9-QD-SJo" secondAttribute="centerX" id="ud4-ND-IcD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WCv-ke-3Ha"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Github Repo Listing" id="BdK-Uq-nwC"/>
+                    <connections>
+                        <outlet property="reposLabel" destination="KVO-FL-wnW" id="oqT-Es-thB"/>
+                        <outlet property="usernameField" destination="Z6P-4X-JbB" id="eCL-TO-RmS"/>
+                        <outlet property="usernameTextField" destination="Z6P-4X-JbB" id="sLa-Lu-aho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujb-mN-Pms" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kUe-Tg-wCA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w3C-VO-5cH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pnN-bb-MDS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MQu-7J-Xwj" kind="relationship" relationship="rootViewController" id="6UD-hK-gXd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFW-95-fvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
