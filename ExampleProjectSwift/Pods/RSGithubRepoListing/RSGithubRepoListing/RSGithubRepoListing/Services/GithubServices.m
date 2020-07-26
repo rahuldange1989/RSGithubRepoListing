@@ -13,7 +13,15 @@
 
 @implementation GithubServices
 
-- (void)getGithubReposForUsername:(NSString*)username completionBlocl: (CompletionBlock)completionBlock
+///
+/// The getGithubReposForUsername function aceepts username from user and
+/// returns all github repos associated with that username.
+///
+/// - parameter username:  username for Github User
+/// - parameter completionBlock: return all Github Repos using this block
+/// - returns: void
+///
+- (void)getGithubReposForUsername:(NSString*)username completionBlock: (CompletionBlock)completionBlock
 {
 	NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 		AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];

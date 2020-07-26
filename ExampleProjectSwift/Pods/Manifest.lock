@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.0)
   - AFNetworking/UIKit (4.0.0):
     - AFNetworking/NSURLSession
-  - RSGithubRepoListing (0.0.5):
+  - RSGithubRepoListing (0.0.6):
     - AFNetworking (= 4.0.0)
 
 DEPENDENCIES:
@@ -27,7 +27,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
-  RSGithubRepoListing: fa284ce37f510c78a35cc19d06a5c62ab66355fb
+  RSGithubRepoListing: 78dea6dc278e3be34e4865266fec678ad2862780
 
 PODFILE CHECKSUM: b029fe238791241ee1df886f73ddcf7c37a47f13
 

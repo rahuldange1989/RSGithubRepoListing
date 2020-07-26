@@ -15,7 +15,7 @@ typedef void (^CompletionBlock)(RSGithubRepos*);
 
 @interface GithubServices : NSObject
 
-- (void)getGithubReposForUsername:(NSString*)username completionBlocl: (CompletionBlock)completionBlock;
+- (void)getGithubReposForUsername:(NSString*)username completionBlock: (CompletionBlock)completionBlock;
 
 @end
 

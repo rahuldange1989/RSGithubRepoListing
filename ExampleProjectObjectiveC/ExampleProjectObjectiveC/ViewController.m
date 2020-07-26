@@ -27,7 +27,7 @@
 	NSString *username = [self.usernameField.text stringByReplacingOccurrencesOfString:@" " withString:@""];
 	
 	GithubServices *services = [[GithubServices alloc] init];
-	[services getGithubReposForUsername:username completionBlocl:^(RSGithubRepos * allRepos) {
+	[services getGithubReposForUsername:username completionBlock:^(RSGithubRepos * allRepos) {
 
 		NSString *repoString = @"";
 		
