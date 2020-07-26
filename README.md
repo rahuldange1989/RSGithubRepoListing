@@ -16,7 +16,7 @@ pod 'RSGithubRepoListing', '~> 0.0.5'
 
 // In your custom function
 GithubServices *services = [[GithubServices alloc] init];
-[services getGithubReposForUsername:**required username** completionBlocl:^(RSGithubRepos * allRepos) {
+[services getGithubReposForUsername:**required username** completionBlock:^(RSGithubRepos * allRepos) {
   // You will get all records in RSGithubRepos array.
 }];
 ```
